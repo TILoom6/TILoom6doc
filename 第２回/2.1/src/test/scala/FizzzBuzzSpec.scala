@@ -1,13 +1,11 @@
 import org.scalatest._
 
 class FizzBuzzTypeSpec extends FlatSpec with DiagrammedAssertions {
-  it should "3の代わりに'Fizz'" in {
-    val value = FizzBuzz.convert(3)
-    assert(value === "Fizz")
+  it should "3の倍数だったら'Fizz'" in {
+    assert(FizzBuzz.convert(3) === "Fizz")
   }
 
-  it should "6の代わりに'Fizz'" in {
-    val value = FizzBuzz.convert(6)
-    assert(value === "Fizz")
+  it should "3の倍数ではなかったら'数字'" in {
+    assert(FizzBuzz.convert(2) === "2")
   }
 }
