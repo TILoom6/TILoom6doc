@@ -5,4 +5,9 @@ class FizzBuzzTypeSpec extends FlatSpec with DiagrammedAssertions {
     val value = FizzBuzz.convert(3)
     assert(value === "Fizz")
   }
+
+  it should "6の代わりに'Fizz'" in {
+    val value = FizzBuzz.convert(6)
+    assert(value === "Fizz")
+  }
 }
