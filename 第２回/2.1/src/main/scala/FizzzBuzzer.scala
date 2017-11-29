@@ -1,4 +1,4 @@
-object FizzBuzz {
+object FizzzBuzzer {
   def convert(number: Int): String = {
     number match {
       case n if (n % 15 == 0) => "FizzBuzz"
