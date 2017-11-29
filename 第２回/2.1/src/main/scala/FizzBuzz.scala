@@ -1,5 +1,9 @@
 object FizzBuzz {
   def convert(number: Int): String = {
-    if (number % 3 == 0) "Fizz" else number.toString
+    number match {
+      case n if (n % 3 == 0) => "Fizz"
+      case n if (n % 5 == 0) => "Buzz"
+      case _ => number.toString
+    }
   }
 }
