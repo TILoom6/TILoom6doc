@@ -1,4 +1,4 @@
-# play framework on scala
+# play framework with scala
 
 ## install
 
