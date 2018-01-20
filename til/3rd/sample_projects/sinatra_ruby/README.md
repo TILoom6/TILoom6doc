@@ -16,7 +16,7 @@
 
 ## open
 
-http//:localhost:9393/
+http//localhost:9393/
 
 ## References
 
