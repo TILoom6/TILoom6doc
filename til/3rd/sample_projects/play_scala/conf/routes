@@ -1,1 +1,5 @@
-GET /  controllers.Application.index
+GET  /  controllers.WannaTagController.index
+
+GET  /wannatags  controllers.WannaTagController.getWannaTags( compare: String = "older", postDate: Long = 0, limit: Int = -1 )
+POST  /wannatags controllers.WannaTagController.saveWannaTag
+DELETE  /wannatags/:postDate  controllers.WannaTagController.deleteWannaTag( postDate: Long )
