@@ -29,7 +29,15 @@ class Server < Sinatra::Base
   end
 
   post '/wannatags' do
-    # ここ、わからなかったです♡
+    json = JSON.parse request.body.read
+    puts json['wannatagId']
+    puts json['title']
+    puts json['body']
+    puts json['username']
+    puts json['postDate']
+    puts json['isOwner']
+
+    'saved!'
   end
 
   delete '/wannatags/:postDate' do
