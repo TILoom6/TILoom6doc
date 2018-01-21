@@ -9,14 +9,10 @@ import model._
 @Singleton
 class WannaTagController @Inject()( components: ControllerComponents ) extends AbstractController( components ) {
 
-  def index() = Action { implicit request: Request[AnyContent] =>
-    Ok( "Hello World." )
-  }
-
   def getWannaTags( compare: String, postDate: Long, limit: Int ) = Action {
     val json = """
     {
-      "wannaTagId": 1111,
+      "wannatagId": 1111,
       "title": "sample1",
       "body": "this wannatag is sample1.",
       "username": "sample user A",
@@ -33,10 +29,22 @@ class WannaTagController @Inject()( components: ControllerComponents ) extends A
 
   def saveWannaTag = Action( parse.json ) { implicit request =>
     request.body.validate[WannaTag].map{
-      case wannatag => Ok(" Save Success! ")
+      case wannatag => {
+        println( wannatag.wannatagId )
+        println( wannatag.title )
+        println( wannatag.body )
+        println( wannatag.username )
+        println( wannatag.postDate )
+        println( wannatag.isOwner )
+        Ok( "saved!" )
+      }
     }.recoverTotal{
-      case _ => BadRequest(" Error! ")
+      case _ => {
+        println( "error" )
+        BadRequest( "Error!" )
+      }
     }
+    Ok( "saved!")
   }
 
   def deleteWannaTag( postDate: Long ) = Action( Ok( "Deleted!" ) )
