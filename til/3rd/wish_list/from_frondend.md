@@ -60,5 +60,5 @@ or
 ##### Example
 
 ```
-/wannatags/<削除したいWannatagの投稿日時>
+/wannatags/<削除したいWannatagId>
 ```
