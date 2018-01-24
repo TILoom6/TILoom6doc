@@ -32,15 +32,15 @@
 
 ### WAF
 
-Play
+* [Play](https://www.playframework.com)
 
 ### DB Connection
 
-Slick
+* [Slick](http://slick.lightbend.com)
 
 ### Twitter Auth
 
-Twitter4J
+* [Twitter4J](http://twitter4j.org/ja/index.html)
 
 ### 次やること
 
