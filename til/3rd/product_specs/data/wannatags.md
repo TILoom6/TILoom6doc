@@ -61,8 +61,6 @@
 {
   title: <String>,       // [必須]Wannatagのタイトル。1文字以上
   body: <String>,        // [必須]Wannatagの本文。1文字以上
-  username: <String>,    // [必須]Wannatagのを書いた人（所有者）。1文字以上
-                         //      サーバー側にユーザー名を特定させた方が良い？
-  userId: <Number???>    // 型は仮
+  userId: <Number>,      // [必須]Wannatagのを書いた人（所有者）のユーザーID。1文字以上
 }
 ```
