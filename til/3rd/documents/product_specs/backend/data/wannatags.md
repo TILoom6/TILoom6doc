@@ -16,7 +16,7 @@
 
 ```js
 {
-  wannnatagId: <Number>, // ユニークId。型は仮
+  wannatagId: <Number>, // ユニークId。型は仮
   title: <String>,       // Wannatagのタイトル。最大 50 文字（仮）
   body: <String>,        // Wannatagの本文。最大 250 文字（仮）
   username: <String>,    // Wannatagのを書いた人（所有者）。最大文字数未定
@@ -32,7 +32,7 @@
 ```js
 [
   {
-    wannnatagId: <Number>,
+    wannatagId: <Number>,
     title: <String>,
     body: <String>,
     username: <String>,
@@ -40,7 +40,7 @@
     isOwner: <Boolean>
   },
   {
-    wannnatagId: <Number>,
+    wannatagId: <Number>,
     title: <String>,
     body: <String>,
     username: <String>,
